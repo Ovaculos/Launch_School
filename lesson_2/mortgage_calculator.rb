@@ -50,7 +50,7 @@ loop do
 
   loan_dur_months = loan_dur_years.to_f * 12
   monthly_int = (apr.to_f / 100) / 12
-  monthly_payment = loan_amt.to_f * 
+  monthly_payment = loan_amt.to_f *
                       (monthly_int / 
                       (1 - (1 + monthly_int)**(-loan_dur_months)))
 
