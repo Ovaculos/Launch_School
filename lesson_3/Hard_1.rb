@@ -103,16 +103,17 @@
 
 # Fix the code so thatit can return a false condition, and when more or fewer than 4 ip components are present.
 
-# def dot_separated_ip_address?(input_string)
-#   dot_separated_words = input_string.split(".")
-#   while dot_separated_words.size == 4 do
-#     word = dot_separated_words.pop
-#     break unless is_an_ip_number?(word)
-#     return true
-#   end
+def dot_separated_ip_address?(input_string)
+  dot_separated_words = input_string.split(".")
+  while dot_separated_words.size == 4 do
+    word = dot_separated_words.pop
+    break unless is_an_ip_number?(word)
+    
+    return true
+  end
 
-#   false
-# end
+  false
+end
 
 # def is_an_ip_number?(number)
 #   (0..255).include?(number.to_i)
