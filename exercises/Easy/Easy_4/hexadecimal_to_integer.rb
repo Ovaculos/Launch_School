@@ -39,3 +39,6 @@ end
 
 p hexadecimal_to_integer('4D9f') == 19871
 p hexadecimal_to_integer('82e93BA')
+
+arr = [1, 2, 3, 4]
+p arr[2]

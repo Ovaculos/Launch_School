@@ -1,4 +1,3 @@
-require 'pry'
 
 PLAYER_MARKER = 'X'
 COMPUTER_MARKER = 'O'
