@@ -8,7 +8,7 @@ def anagram_finder(words_list)
     if result.has_key?(key)
       result[key].push(word)
     else
-      result[key] = word
+      result[key] = [word]
     end
   end
 
@@ -16,7 +16,7 @@ def anagram_finder(words_list)
     puts "------"
     p v
   end
-  
+
 end
 
 anagram_finder(words)
