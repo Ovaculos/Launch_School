@@ -8,3 +8,5 @@ Benchmark.ips do |x|
   x.report('upto') { 1.upto(n) do; a = '1'; end}
   x.compare!
 end
+
+'test'
