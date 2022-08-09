@@ -39,3 +39,4 @@ end
 diamond(5)
 
 diamond(10)
+
