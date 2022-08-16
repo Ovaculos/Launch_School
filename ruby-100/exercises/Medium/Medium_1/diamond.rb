@@ -13,16 +13,16 @@
 
 # Hollow Diamond
 
-def diamond(size)
-  1.upto(size) do |n|
-    puts "#{' ' * ((size - n) / 2)}#{('*' * n)}" if n.odd?
-  end
+# def diamond(size)
+#   1.upto(size) do |n|
+#     puts "#{' ' * ((size - n) / 2)}#{('*' * n)}" if n.odd?
+#   end
 
-  (size - 2).downto(1) do |n|
-    puts "#{' ' * ((size - n) / 2)}#{('*' * n)}" if n.odd?
-  end
+#   (size - 2).downto(1) do |n|
+#     puts "#{' ' * ((size - n) / 2)}#{('*' * n)}" if n.odd?
+#   end
 
-end
+# end
 
 def print_row(grid_size, distance_from_center)
   number_of_stars = grid_size - 2 * distance_from_center
@@ -39,4 +39,3 @@ end
 diamond(5)
 
 diamond(10)
-
