@@ -1,8 +1,22 @@
 def bubble_sort!(array)
-  
 
   loop do 
-    swapped? = false
+    pointer = -1
+    swapped = false
+
+    until pointer == array.length do 
+      pointer += 1
+
+      if (array[pointer] <=> array[pointer + 1]) == 1
+        array[pointer], array[pointer + 1] = array[pointer + 1], array[pointer]
+        swapped = true
+      else
+        next
+      end
+
+    end
+
+    break unless swapped
   end
 end
 
