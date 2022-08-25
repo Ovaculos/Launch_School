@@ -1,4 +1,4 @@
-adjectives: quick lazy sleepy ugly
-nouns: fox dog head leg
-verbs: jumps lifts bites licks
-adverb: easily lazily noisily excitedly
+The %{adjective} brown %{noun} %{adverb}
+%{verb} the %{adjective} yellow
+%{noun}, who %{adverb} %{verb} his
+%{noun} and looks around.
