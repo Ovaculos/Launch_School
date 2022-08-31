@@ -1,5 +1,14 @@
 def rotate90(matrix)
-  
+  result = []
+  num_of_rows = matrix[0].size
+  num_of_columns = matrix.size
+
+  (0...num_of_rows).each do |column_index|
+    new_row = (0...num_of_columns).map { |row_index| matrix[row_index][column_index] }
+    result << new_row.reverse
+  end
+
+  result
 end
 
 matrix1 = [
