@@ -4,7 +4,7 @@ Goal is to get as close to 21 without going over
 
 Game has a 'dealer' and a 'player'. Both are dealt 2 cards. The player can see both their cards, but only one of the dealer's cards.
 
-Numbers cards are worth their face value
+Number cards are worth their face value
 Jack, Queen, and King are worth 10
 Ace is worth either 1 or 11. The value is determined weather the ace makes the hand not exceed 21. If an 11 will make the hand not exceed 21, it's worth 11, if it does, it's worth 1.
 
