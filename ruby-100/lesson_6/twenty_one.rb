@@ -100,9 +100,9 @@ loop do
     print_hand_and_total(player_hand, 'player')
     puts 'Hit or Stay?'
     answer = gets.chomp.downcase
-    break if answer == 'stay' || busted?(player_hand)
+    break if answer == 'stay'
     draw_card(player_hand, deck) if answer == 'hit'
-    break if answer == 'stay' || busted?(player_hand)
+    break if busted?(player_hand)
   end
 
   if busted?(player_hand)
@@ -128,6 +128,7 @@ loop do
   else
     puts("Your total was #{total(player_hand)}, and the dealer's total was #{total(dealer_hand)}.")
     winner(player_hand, dealer_hand)
+    break
   end
 
 end
