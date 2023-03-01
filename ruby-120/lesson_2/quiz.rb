@@ -1,27 +1,25 @@
-class FarmAnimal
-  def speak
-    "#{self.class} says "
+module Speed
+  def go_fast
+    puts "I am a #{self.class} and going super fast!"
   end
 end
 
-class Sheep < FarmAnimal
-  def speak
-    super + "baa!"
+class Car
+  include Speed
+
+  def go_slow
+    puts "I am safe and driving slow."
   end
 end
 
-class Lamb < Sheep
-  def speak
-    super + "baaaaaaa!"
+class Truck
+  include Speed
+
+  def go_very_slow
+    puts "I am a heavy truck and like going very slow."
   end
 end
 
-class Cow < FarmAnimal
-  def speak
-    super + "mooooooo!"
-  end
-end
+porche = Car.new
 
-p Sheep.new.speak # => "Sheep says baa!"
-p Lamb.new.speak # => "Lamb says baa!baaaaaaa!"
-p Cow.new.speak # => "Cow says mooooooo!"
+porche.go_fast
